@@ -7,7 +7,7 @@ public class Sighting {
 	private int id;
 	private LocalDateTime datetime;
 	private String city;
-	private String state;
+	private State state;
 	private String country;
 	private String shape;
 	private int duration;
@@ -17,7 +17,7 @@ public class Sighting {
 	private double latitude;
 	private double longitude;
 
-	public Sighting(int id, LocalDateTime datetime, String city, String state, String country, String shape,
+	public Sighting(int id, LocalDateTime datetime, String city, State state, String country, String shape,
 			int duration, String duration_hm, String comments, LocalDate date_posted, double latitude,
 			double longitude) {
 		super();
@@ -59,11 +59,11 @@ public class Sighting {
 		this.city = city;
 	}
 
-	public String getState() {
+	public State getState() {
 		return state;
 	}
 
-	public void setState(String state) {
+	public void setState(State state) {
 		this.state = state;
 	}
 
